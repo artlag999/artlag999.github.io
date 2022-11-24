@@ -1,0 +1,129 @@
+.portfolio__head {
+    background: rgba(39,128,255,0.6);
+    background: linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(39,128,255,0.6) 100%);
+    .head__container {
+        justify-content: end;
+    }
+}
+
+.portfolio__container {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.portfolio__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.portfolio__btn {
+    width: 30%;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.portfolio__item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 160px;
+    background-color: gray;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.portfolio__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.portfolio-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    box-sizing: border-box;
+    top: 100%;
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    background-color: rgba($color: #333, $alpha: .7);
+    transition: transform .5s ease-in-out;
+    text-shadow: 1px 1px black;
+}
+.portfolio-item:nth-child(1) {
+    background-image: url('../img/project-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.portfolio-item__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__item:hover {
+    .portfolio-item__content {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .portfolio__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .portfolio__item {
+        width: calc(50% - 5px);
+        margin-right: 10px;
+
+    }
+    .portfolio__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+   
+}
+
+@media (min-width: 992px) {
+    .portfolio__container {
+        padding-top: 60px;
+        padding-bottom: 74px;
+    }
+    .portfolio__btns {
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
+    .portfolio__btn {
+        width: 200px;
+    }
+    .portfolio__item {
+        width: calc(100% / 3 - 20px / 3);
+        margin-right: 10px;
+
+    }
+    .portfolio__item:nth-child(2n) {
+        margin-right: 10px;
+    }
+    .portfolio__item:nth-child(3n) {
+        margin-right: 0;
+    }
+    .portfolio__item:last-child {
+        margin-right: 0;
+    }
+}

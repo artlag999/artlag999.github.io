@@ -1,0 +1,26 @@
+.contact__head {
+    background: rgba(153,7,153,0.6);
+    background: linear-gradient(90deg, rgba(153,7,153,0.6) 0%, rgba(255,255,255,0.6) 100%);
+}
+.contact__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.contact__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    
+}
