@@ -3,10 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Артём Лагутин - портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script defer src="js/main.js"></script> -->
 </head>
 <body>
-    Скоро здесь что-то будет...
+    <main>
+        <section class="section hero">
+            <div class="hero__container container">
+                <div class="hero__btns">
+                    <a href="#portfolio" class="hero__btn btn">Портфолио</a>
+                    <a href="#resume" class="hero__btn btn">Резюме</a>
+                    <a href="#contact" class="hero__btn btn">Контакты</a>
+                </div>
+                <h1 class="hero__head">АРТЁМ ЛАГУТИН</h1>
+                <p class="hero__desc">FRONT-END РАЗРАБОТЧИК</p>
+            </div>
+        </section>
+
+
+        <section class="section resume" id="resume">
+            <div class="resume__head head">
+                <div class="head__container">
+                    <h2 class="head__title title">РЕЗЮМЕ</h2>
+                    <button class="btn head__btn">Скачать резюме</button>
+                </div>
+            </div>
+            <div class="container resume__container">
+                <ul class="resume__list resume__list-skill">
+                    <li class="resume__item resume__item-first">Профессиональные навыки</li>
+                    <li class="resume__item">уверенные знания HTML, CSS</li>
+                    <li class="resume__item">блочная, кроссбраузерная, адаптивная верстка для мобильных устройств, семантика кода, валидность</li>
+                    <li class="resume__item">базовые знания JavaScript</li>
+                </ul>
+                <ul class="resume__list resume__list-educ">
+                    <li class="resume__item resume__item-first">Образование</li>
+                    <li class="resume__item">
+                        <p class="resume__date">Сентябрь 2022</p>
+                        <p class="resume__desc">курс по базовому HTML - Skillbox</p>
+                    </li>
+                    <li class="resume__item">
+                        <p class="resume__date">Сентябрь 2022</p>
+                        <p class="resume__desc">курс по базовому JavaScript - Skillbox</p>
+                    </li>
+                    <li class="resume__item">
+                        <p class="resume__date">Сентябрь 2022</p>
+                        <p class="resume__desc">Санкт-Петербургский Политехнический университет Петра Великого, специалист по техносферной безопасности, бакалавр</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="section portfolio" id="portfolio">
+            <div class="portfolio__head head">
+                <div class="head__container">
+                    <h2 class="head__title title">ПОРТФОЛИО</h2>
+                </div>
+            </div>
+            <div class="portfolio__container container">
+                <div class="portfolio__btns">
+                    <button class="portfolio__btn btn" id="portfolio__all">Все работы</button>
+                    <button class="portfolio__btn btn" id="portfolio__adaptive">Учебные</button>
+                    <button class="portfolio__btn btn" id="portfolio__study">JS</button>
+                </div>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__head">Макет Blanchard</h3>
+                            <p class="portfolio-item__desc">Итоговая работа по курсу Веб-верстка «Базовый уровень»</p>
+                            
+                        </div>
+                        <a href="https://artlag999.github.io/Blanchard/" class="portfolio-item__link" target="_blank"></a>
+                    </li>
+
+                    <li class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__head">Макет Lagoona</h3>
+                            <p class="portfolio-item__desc"></p>
+                            
+                        </div>
+                        <a href="https://artlag999.github.io/Lagoona/" class="portfolio-item__link" target="_blank"></a>
+                    </li>
+
+                    <li class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__head">Макет Euclid</h3>
+                            <p class="portfolio-item__desc"></p>
+                            
+                        </div>
+                        <a href="https://artlag999.github.io/Euclid/" class="portfolio-item__link" target="_blank"></a>
+                    </li>
+
+                    <li class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__content">
+                            <h3 class="portfolio-item__head">Макет High pass</h3>
+                            <p class="portfolio-item__desc"></p>
+                            
+                        </div>
+                        <a href="https://artlag999.github.io/High_pass/" class="portfolio-item__link" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="section contact" id="contact">
+            <div class="contact__head head">
+                <div class="head__container">
+                    <h2 class="head__title title">КОНТАКТЫ</h2>
+                </div>
+            </div>
+            <div class="contact__container container">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="mailto:artlag999@mail.ru" class="contact__link">artlag999@mail.ru</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel: 89214131173" class="contact__link">8 921 413 11 73</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://github.com/artlag999?tab=repositoriess" class="contact__link" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
